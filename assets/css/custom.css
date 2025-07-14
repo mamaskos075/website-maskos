@@ -1,0 +1,227 @@
+/* assets/css/custom.css */
+
+/* --- Bagian dari pembaruan sebelumnya, pastikan tetap ada --- */
+
+/* Penyesuaian untuk gambar kos tampak depan */
+.kos-image {
+  width: 100%;
+  height: 750px; /* Tinggi tetap untuk rasio 4:5 (600px width / 750px height) */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+  margin-bottom: 25px; /* Jarak bawah gambar */
+  border-radius: 8px; /* Sudut sedikit membulat */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan tipis untuk kesan elegan */
+}
+
+/* Penyesuaian untuk gambar fasilitas */
+.facility-image {
+  width: 100%;
+  height: 750px; /* Tinggi tetap untuk rasio 4:5 */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+  margin-top: 15px; /* Jarak atas gambar dari judul fasilitas */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Pastikan gambar responsif pada layar kecil */
+@media (max-width: 768px) {
+  .kos-image, .facility-image {
+    height: 500px; /* Kurangi tinggi pada layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .kos-image, .facility-image {
+    height: 400px; /* Kurangi tinggi lebih lanjut pada layar sangat kecil */
+  }
+}
+
+/* Styling untuk judul fasilitas di Section 4 */
+.facility-title {
+  font-size: 1.3rem; /* Sedikit lebih besar dari default h5, tapi tidak terlalu besar */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Penyesuaian untuk tabel fasilitas */
+.facility-table {
+  margin-top: 25px;
+  border-collapse: separate; /* Penting untuk border-radius */
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden; /* Penting agar border-radius berfungsi */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Bayangan untuk kesan elegan */
+}
+
+.facility-table th, .facility-table td {
+  padding: 12px 20px;
+  vertical-align: middle;
+  border: 1px solid #dee2e6; /* Border tipis */
+  font-size: 0.95rem; /* Ukuran font lebih kecil untuk tabel */
+}
+
+.facility-table thead th {
+  background-color: #212529; /* Warna gelap untuk header tabel */
+  color: #fff;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+}
+
+.facility-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Warna latar belakang bergantian untuk baris */
+}
+
+.facility-table tbody tr:hover {
+  background-color: #e9ecef; /* Efek hover pada baris */
+  cursor: pointer;
+}
+
+/* --- Perubahan Baru: Styling untuk Tabel Akses Terdekat --- */
+.access-location-table {
+  margin-top: 25px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.access-location-table th, .access-location-table td {
+  padding: 12px 20px;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+  font-size: 0.95rem;
+}
+
+.access-location-table thead th {
+  background-color: #212529;
+  color: #fff;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+}
+
+.access-location-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.access-location-table tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+
+/* assets/css/custom.css */
+
+/* ... kode CSS sebelumnya ... */
+
+/* Penyesuaian untuk tombol penawaran */
+.main-button a {
+  display: inline-flex; /* Ganti dari inline-block menjadi inline-flex */
+  justify-content: center; /* Pusatkan teks secara horizontal */
+  align-items: center;   /* Pusatkan teks secara vertikal */
+  text-align: center;    /* Cadangan untuk perataan teks */
+
+  padding: 14px 30px; /* Padding tetap seperti sebelumnya, bisa disesuaikan */
+  background-color: #f36100;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(243, 97, 0, 0.2);
+  height: auto; /* Pastikan tinggi tidak fix jika ingin adaptif */
+  line-height: normal; /* Reset line-height agar tidak mengganggu centering flexbox */
+}
+
+.main-button a:hover {
+  background-color: #e55a00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(243, 97, 0, 0.3);
+}
+
+/* ... sisa kode CSS Anda ... */
+
+
+/* Penyesuaian untuk garis horizontal pemisah section */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    margin: 60px 0; /* Memberikan jarak atas dan bawah yang lebih lega */
+}
+
+/* Penyesuaian font secara umum agar tidak terlalu besar */
+body {
+    font-size: 1rem; /* Ukuran font dasar */
+}
+
+p {
+    font-size: 1rem; /* Ukuran font untuk paragraf */
+    line-height: 1.7; /* Jarak antar baris */
+    color: #4a4a4a;
+}
+
+/* Mengatur ukuran heading agar tidak terlalu besar */
+.main-content h4 {
+  font-size: 1.8rem; /* Ukuran untuk judul kos */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  font-size: 2rem; /* Ukuran untuk sub-judul section */
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.section-heading h6 {
+  font-size: 0.95rem; /* Ukuran untuk label kecil */
+  color: #f36100;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Mengatur label category di Section 1 */
+.main-content .category {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    background-color: #f36100;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* --- Perubahan Baru: Styling untuk Footer --- */
+footer {
+    background-color: #2a2a2a; /* Warna latar belakang gelap untuk footer */
+    padding: 40px 0; /* Padding atas dan bawah */
+    text-align: center;
+    color: #b0b0b0; /* Warna teks umum di footer */
+    font-size: 0.9rem; /* Ukuran font footer */
+}
+
+.footer-content {
+    max-width: 800px; /* Batasi lebar konten footer */
+    margin: 0 auto; /* Tengah konten */
+}
+
+footer p {
+    margin-bottom: 8px; /* Jarak antar paragraf di footer */
+    color: #b0b0b0; /* Memastikan warna teks paragraf footer sama */
+}
+
+footer p a {
+    color: #f36100; /* Warna link di footer */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    color: #e55a00; /* Warna link saat hover */
+    text-decoration: underline;
+}
