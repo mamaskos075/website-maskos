@@ -1,0 +1,3 @@
+user-agent: *
+Allow: /
+sitemap: https://maskos.web.id/sitemap.xml
